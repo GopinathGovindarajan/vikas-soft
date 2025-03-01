@@ -1,0 +1,6 @@
+---
+-name : Git_Jenkins_Ans
+hosts: localhost
+tasks:
+-name: listout the fiel
+cmd: ls -lart /tmp
