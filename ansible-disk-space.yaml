@@ -1,0 +1,12 @@
+---
+- name: Check Disk Space
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Get disk space
+      command: df -h /
+      register: disk_space
+
+    - name: Show disk space
+      debug:
+        msg: "{{ disk_space.stdout_lines }}"
