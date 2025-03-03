@@ -1,6 +1,6 @@
 ---
 - name: Check Disk Space
-  hosts: all
+  hosts: localhost
   gather_facts: yes
   tasks:
     - name: Get disk space
